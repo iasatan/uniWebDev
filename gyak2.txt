@@ -1,0 +1,45 @@
+idea új quickstart projekt
+EmployeeMeneger
+pom-ban packaging hozzáadása és pom-ra írása
+
+model modul elkészítése
+employee pojo elkészítése
+department lombok elkészítése
+
+Funkciók végigvezetése
+
+select, insert, update, delete
+
+SELECT
+
+persist modul elkészítése
+model modul behúzása
+employeeDAO interface 5 metódussal
+employeeNotFoundException készítése	
+
+persistInMemory modul készítése
+persist modul behúzása
+
+employeeDaoImpl elkészítése
+employeeDao interface implementálása
+
+employeeLista
+konstruktorok
+selectEmployee megírása
+
+service modul készítése
+model, persist modul behúzása
+employeeService interface
+
+serviceImpl modul készítés
+service behúzása
+employeeServiceImpl készítése
+
+
+Controller modul elkészítése
+spring core, web és webmvc behúzása
+model behúzása
+employeeController elkészítése
+
+
+web modul
