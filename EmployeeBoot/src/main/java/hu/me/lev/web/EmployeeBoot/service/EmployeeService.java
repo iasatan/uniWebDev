@@ -9,6 +9,7 @@ public interface EmployeeService {
 
     Employee getEmployee(int id) throws EmployeeNotFoundException;
 
+
     List getAllEmployee();
 
     void addEmployee(Employee employee);

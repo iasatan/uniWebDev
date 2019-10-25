@@ -2,11 +2,13 @@ package hu.me.lev.web.EmployeeBoot.persist;
 
 import hu.me.lev.web.EmployeeBoot.exception.EmployeeNotFoundException;
 import hu.me.lev.web.EmployeeBoot.model.Employee;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class EmployeeDAOImpl implements EmployeeDAO {
 
     private Map<Integer, Employee> employeeMap;
@@ -24,11 +26,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         return employeeMap.get(id);
     }
 
-    private boolean idInUse(int id) {
-        if (employeeMap.containsKey(id)) {
-            return true;
-        }
-        return false;
+    public boolean idInUse(int id) {
+        return employeeMap.containsKey(id);
     }
 
     @Override

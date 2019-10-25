@@ -10,6 +10,8 @@ public interface EmployeeDAO {
 
     List selectEveryEmployee();
 
+    boolean idInUse(int id);
+
     void updateEmployee(Employee employee);
 
     void insertEmployee(Employee employee);
